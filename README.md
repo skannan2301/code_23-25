@@ -1,7 +1,7 @@
 # code_23-25
 
 EEG Pre-Processing: 
-  Authors: SRK, MADE-BOND pipeline (mostly commented out)
+  Authors: SRK, Adam, MADE-BOND pipeline (mostly commented out)
   d_IDbadchan_remove.m
   f_segment1sec.m
   g_runICA.m
