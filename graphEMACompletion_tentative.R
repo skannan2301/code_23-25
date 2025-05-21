@@ -10,8 +10,6 @@ library(ggplot2)
 file <- ("")
 merged_frames <- read.csv(file, header = TRUE, sep = ",", stringsAsFactors = FALSE) %>% separate(RecordedDate, c("dateCompleted", "timeCompleted"), " ")
 
-#record_id <- "tryzrej98"
-
 #convert date1 into Date format - new 3/7 srk --> want it to be ymd for dateDiff later
 merged_frames$dateCompleted <- parse_date_time(merged_frames$dateCompleted, orders = c("mdy", "ymd", "dmy"))
 merged_frames$dateCompleted <- as.Date(merged_frames$dateCompleted)
